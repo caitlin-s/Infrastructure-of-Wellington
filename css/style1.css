@@ -1,0 +1,237 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: sans-serif;
+}
+
+section{
+	max-width: 1000px;
+	margin-bottom: 20px;
+}
+
+/*HEADER*/
+
+header{
+	background-color: #b6aebd; 
+	color: white; 
+	height: 100vh;
+}
+
+header section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 28vh;
+}
+
+header h1{
+	margin-top: 0px;
+	margin-bottom: 1vh;
+}
+
+img{
+	width: 100%
+}
+
+/*HOME BUTTON*/
+.buttonHome{
+	background-color: #707070;
+ 	border: none;
+	outline: none;
+	display: block;
+	height: 50px;
+	width: 100px;
+ 	cursor: pointer;
+	transition: transform .2s;
+	position: fixed;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.buttonHome:hover{
+	transform: scale(1.05); 
+	cursor: pointer;
+}
+
+button p{
+	font-size: 18px;
+	color: white;
+	margin-top: 2px;
+}
+
+/*IMAGE BUTTONS*/
+.buttonStyle{
+	border: none;
+	outline: none;
+	display: block;
+	height: 500px;
+	width: 100%;
+	cursor: pointer;
+	transition: transform .2s;
+}
+
+.buttonStyle:hover {
+  	transform: scale(1.05); 
+  	cursor: pointer;
+}
+
+/*TYPE*/
+
+h1{
+	font-family: 'avenir-black', sans-serif;
+	text-align: center;
+	font-size: 150px;
+}
+
+div h1{
+	font-size: 5vw;
+	margin: 0px;
+}
+
+p{
+	font-family: 'avenir-medium', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+i{
+	font-family: 'avenir-medium', sans-serif;
+	text-align: center;
+	font-size: 15px;
+}
+
+a:link{
+	color: #5c2d87;
+}
+
+a:visited{
+	color: #5c2d87;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*FONTS*/
+
+@font-face{
+  	font-family: 'avenir-black';
+  	src: url('avenir-black.ttf');
+  	font-weight: bold;
+}
+
+@font-face{
+  	font-family: 'avenir-medium';
+  	src: url('avenir-medium.otf');
+  	font-weight: normal;
+}
+
+/*GRIDS*/
+/*Grid help from W3schools and freecodecamp.org*/
+
+.grid{
+	display: grid;
+    grid-template-columns: repeat(4, 22vw);
+    grid-template-rows: repeat(2, 22vw);
+    grid-gap: 20px;
+    padding: 3%;
+}
+
+.grid> div> img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid> div> img:hover{
+	transform: scale(1.05); 
+	cursor: pointer;
+}
+
+/*MODALS*/
+/*From w3schools*/
+
+ .modal{
+  	display: none;
+  	position: fixed;
+  	z-index: 1;
+  	left: 0;
+  	top: 0;
+  	width: 100vw;
+  	height: 100vh;
+  	overflow-y: auto;
+  	background-color: rgb(0,0,0);
+  	background-color: rgba(0,0,0,0.4);
+  	-webkit-animation-name: fadeIn; 
+  	-webkit-animation-duration: 0.4s;
+  	animation-name: fadeIn;
+  	animation-duration: 0.4s
+}
+
+.modal-content {
+	background-color: #b6aebd; 
+  	margin: auto;
+  	margin-top: 5%;
+  	padding: 20px;
+  	border: none;
+  	width: 60%;
+  	font-family: 'avenir-medium', sans-serif;
+  	font-weight: normal;
+  	color: white;
+}
+
+.modalGrid{
+	display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    padding: 1%;
+}
+
+/*MODAL CLOSE*/
+
+.close{
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.close: hover,
+.close: focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*MODAL ANIMATION*/
+
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}

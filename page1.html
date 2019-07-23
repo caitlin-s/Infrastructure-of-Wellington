@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Manhole Covers</title>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+
+<body>
+
+<!-- HOME BUTTON -->
+<a href="index.html">
+	<button class="buttonHome">
+		<p> Home </p>
+	</button>
+</a>
+
+<!-- MANHOLE COVERS -->
+	<header> 
+		<section>
+			<h1>Manhole Covers</h1>
+			<p>Manholes are openings to a space that we don't usually recognise or consider in our day to day lives. Beneath us lies a vast network, making connections between us and countless other systems such as the water, sewerage, telephone, electric, heating and gas services. The designs on these manhole covers often indicate what system they are connected to.</p>
+		</section>
+	</header>
+
+<!-- GRID and MODAL BUTTONS-->
+	<div class="grid">
+		<div id="myBtn" onclick="openModal ('modal1')"> <img src="img/Manhole_cover/manhole_1.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal3')"> <img src="img/Manhole_cover/manhole_3.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal4')"> <img src="img/Manhole_cover/manhole_4.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal5')"> <img src="img/Manhole_cover/manhole_5.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal6')"> <img src="img/Manhole_cover/manhole_8.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal7')"> <img src="img/Manhole_cover/manhole_9.jpg"> </div>
+	</div>
+
+<!-- MODAL CONTENT -->
+
+<!-- Uber -->
+<div id="modal1" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Manhole_cover/manhole_1.jpg"> </div>
+    		<div style="padding-top: 25vh">
+    			<h1> UBER </h1>
+    			<p>Uber manhole cover with a circular design. Uber is a company manufactures pipes, valves and fittings so this manhole cover doesn't reveal anything about the public utility it contains. <a href="https://www.hynds.co.nz/product/uber-manhole-covers/"> Here </a> is a link to one of their manhole covers listed on the Hynds website.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- WCC stormwater -->
+<div id="modal3" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Manhole_cover/manhole_3.jpg"> </div>
+    		<div style="padding-top: 22vh">
+    			<h1> WCC </h1>
+    			<p>Wellington City Council stormwater manhole cover with a floral design. Stormwater is the water that runs off surfaces such as roads, driveways, footpaths and rooftops. The <a href="https://wellington.govt.nz/services/environment-and-waste/stormwater/managing-stormwater"> Wellington stormwater network </a> is made up of 650km of pipes and 20km of tunnels, demonstrating just how vast this system is.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- WCC -->
+<div id="modal4" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Manhole_cover/manhole_4.jpg"> </div>
+    		<div style="padding-top: 22vh">
+    			<h1> WCC </h1>
+    			<p>Wellington City Council manhole cover with a checked design. This manhole cover likely houses one of Wellington City Council's <a href="https://wellington.govt.nz/services/environment-and-waste"> many networks </a> that work in unison to maintain the city.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Mico -->
+<div id="modal5" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Manhole_cover/manhole_5.jpg"> </div>
+    		<div style="padding-top: 25vh">
+    			<h1> MICO </h1>
+    			<p> Mico manhole cover with a circular design. <a href="https://www.mico.co.nz/plumbing/"> Mico </a> is a plumbing and pipelines supplier, similar to Hynds Pipe Systems and Humes Pipeline Systems.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Hynds -->
+<div id="modal6" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Manhole_cover/manhole_8.jpg"> </div>
+    		<div style="padding-top: 25vh">
+    			<h1> HYNDS </h1>
+    			<p>Hynds manhole cover with circular design. <a href="https://www.hynds.co.nz/"> Hynds </a> is a pipelaying company so it is likely a watermain, stormwater or drainage system lays underneath this manhole.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Humes -->
+<div id="modal7" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Manhole_cover/manhole_9.jpg"> </div>
+    		<div style="padding-top: 25vh">
+    			<h1> HUMES </h1>
+    			<p>Humes manhole cover with circular design. <a href="https://www.humes.co.nz/"> Humes </a> is New Zealand's leading pipeline systems supplier, dealing with water related networks. </p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- MODAL SCRIPT -->
+<!-- Code taken from previous project, with help from Stefan -->
+<script>
+var span = document.getElementsByClassName("close") [0];
+var modal;
+
+function openModal (modalID){
+	modal = document.getElementById(modalID);
+	modal.style.display = "block";
+}
+
+function closeModal(){
+	modal.style.display = "none";
+}
+
+span.onclick = function(){
+	modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Buried Cables</title>
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+</head>
+
+<body>
+
+<!-- HOME BUTTON -->
+<a href="index.html">
+	<button class="buttonHome">
+		<p> Home </p>
+	</button>
+</a>
+
+<!-- BURIED CABLES -->
+	<header> 
+		<section>
+			<h1>Buried Cables</h1>
+			<p>These buried cable markers can be found scattered around streets the streets of Wellington. They are indicators of the cables below us that form various systems which play a crucial part in our lives. It is, again, a reminder of the interconnecting structures and systems that we don't see. It shows us just how vast this framework of cables is and how important it is for connecting us.</p>
+		</section>
+	</header>
+
+<!-- GRID and MODAL BUTTONS-->
+	<div class="grid">
+		<div id="myBtn" onclick="openModal ('modal1')"> <img src="img/Buried_cable/buried_cable_1.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal2')"> <img src="img/Buried_cable/buried_cable_2.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal3')"> <img src="img/Buried_cable/buried_cable_3.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal4')"> <img src="img/Buried_cable/buried_cable_4.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal5')"> <img src="img/Buried_cable/buried_cable_5.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal6')"> <img src="img/Buried_cable/buried_cable_8.jpg"> </div>
+	</div>
+
+<!-- MODAL CONTENT -->
+
+<div id="modal1" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Buried_cable/buried_cable_1.jpg"> </div>
+    		<div style="padding-top: 40%">
+    			<h1> CHORUS </h1>
+    			<p>Chorus buried cable marker. <a href="https://www.chorus.co.nz/"> Chorus </a> is a provider of telecommunications infrastructure throughout New Zealand and is the owner of the majority of telephone lines and exchange equipment. These markers demonstrate the size and prevalence of Chorus' underground networks.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal2" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Buried_cable/buried_cable_2.jpg"> </div>
+    		<div style="padding-top: 40%">
+    			<h1> CHORUS </h1>
+    			<p><a href="https://www.chorus.co.nz/"> Chorus </a> buried cable marker located on Plunket Street next to a power pole.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal3" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Buried_cable/buried_cable_3.jpg"> </div>
+    		<div style="padding-top: 40%">
+    			<h1> CHORUS </h1>
+    			<p><a href="https://www.chorus.co.nz/"> Chorus </a> buried cable marker located on Durham Street.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal4" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Buried_cable/buried_cable_4.jpg"> </div>
+    		<div style="padding-top: 40%">
+    			<h1> CHORUS </h1>
+    			<p><a href="https://www.chorus.co.nz/"> Chorus </a> buried cable marker located on Upland Road next to a power pole.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal5" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Buried_cable/buried_cable_5.jpg"> </div>
+    		<div style="padding-top: 40%">
+    			<h1> CHORUS </h1>
+    			<p> <a href="https://www.chorus.co.nz/"> Chorus </a> buried cable marker located on Upland Road. Cables can be seen in the background extending from underneath the pavement.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal6" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Buried_cable/buried_cable_8.jpg"> </div>
+    		<div style="padding-top: 40%">
+    			<h1> CHORUS </h1>
+    			<p><a href="https://www.chorus.co.nz/"> Chorus </a> buried cable marker located on Norway Street next to a power pole.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- MODAL SCRIPT -->
+<!-- Code taken from previous project, with help from Stefan -->
+<script>
+var span = document.getElementsByClassName("close") [0];
+var modal;
+
+function openModal (modalID){
+	modal = document.getElementById(modalID);
+	modal.style.display = "block";
+}
+
+function closeModal(){
+	modal.style.display = "none";
+}
+
+span.onclick = function(){
+	modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: sans-serif;
+}
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+/*HEADER*/
+
+header{
+	background-color: #1c1c1c; /* dark grey backg */
+	color: white; 
+  height: 100vh;
+}
+
+header section{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-top: 20vh;
+}
+
+header h1{
+  margin-top: 0px;
+  margin-bottom: 2vh;
+}
+
+img{
+	width: 100%
+}
+
+/*BUTTONS*/
+
+.buttonStyle{
+  	border: none;
+  	outline: none;
+  	display: block;
+  	height: auto;
+  	width: 100%;
+  	cursor: pointer;
+  	transition: transform .2s;
+}
+
+.buttonStyle:hover {
+  	transform: scaleY(1.05); 
+}
+
+button h1{
+	color: white;
+	text-decoration: none;
+}
+
+
+/*TYPE*/
+
+h1{
+	font-family: 'avenir-black', sans-serif;
+	text-align: center;
+	font-size: 150px;
+}
+
+p{
+	font-family: 'avenir-medium', sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+
+i{
+	font-family: 'avenir-medium', sans-serif;
+	text-align: center;
+	font-size: 15px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*FONTS*/
+
+nav a:hover{
+  color: #c4c4c4; /*dark grey hover*/
+}
+
+@font-face{
+  font-family: 'avenir-black';
+  src: url('avenir-black.ttf');
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'avenir-medium';
+  src: url('avenir-medium.otf');
+  font-weight: normal;
+}

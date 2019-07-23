@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Power Poles</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+
+<body>
+
+<!-- HOME BUTTON -->
+<a href="index.html">
+	<button class="buttonHome">
+		<p> Home </p>
+	</button>
+</a>
+
+<!-- POWER POLES -->
+	<header> 
+		<section style="padding-bottom: 150px">
+			<h1>Power Poles</h1>
+			<p>Power poles or power lines can be commonly found on almost every street. They act as a visualisation of power, phone and landline connections to each house in the neighbourhood. These lines form an expansive network that links each house, as well as greater Wellington, to other internet, phone and power services provided by various companies.</p>
+		</section>
+	</header>
+
+<!-- GRID and MODAL BUTTONS-->
+	<div class="grid">
+		<div id="myBtn" onclick="openModal ('modal1')"> <img src="img/Pole/pole_1.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal2')"> <img src="img/Pole/pole_2.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal3')"> <img src="img/Pole/pole_3.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal4')"> <img src="img/Pole/pole_4.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal5')"> <img src="img/Pole/pole_5.jpg"> </div>
+	</div>
+
+<!-- MODAL CONTENT -->
+
+<!-- Uber -->
+<div id="modal1" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Pole/pole_1.jpg"> </div>
+    		<div style="padding-top: 30%">
+    			<h1> CHORUS + POWERCO </h1>
+    			<p>Chorus power pole with high pressure pipelines located beneath it. These are operated by <a href="https://www.powerco.co.nz/">Powerco</a>, New Zealand's second largest gas and electricity distributor</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal2" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Pole/pole_2.jpg"> </div>
+    		<div style="padding-top: 40%">
+    			<h1>CHORUS</h1>
+    			<p>Chorus power pole. <a href="https://www.chorus.co.nz/"> Chorus </a> is a provider of telecommunications infrastructure throughout New Zealand and is the owner of the majority of telephone lines and exchange equipment. These Chorus power poles provide us with a visual sense of how far their networks reach. </a></p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal3" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Pole/pole_3.jpg"> </div>
+    		<div style="padding-top: 30%">
+    			<h1> CHORUS + POWERCO </h1>
+    			<p>Chorus power pole with high pressure pipelines located beneath it, operated by gas and electricity distributor <a href="https://www.powerco.co.nz/">Powerco. </a></p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal4" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Pole/pole_4.jpg"> </div>
+    		<div style="padding-top: 45%">
+    			<h1> CHORUS </h1>
+    			<p> <a href="https://www.chorus.co.nz/"> Chorus</a> power pole.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal5" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Pole/pole_5.jpg"> </div>
+    		<div style="padding-top: 45%">
+    			<h1> CHORUS </h1>
+    			<p> <a href="https://www.chorus.co.nz/"> Chorus </a> power pole.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- MODAL SCRIPT -->
+<!-- Code taken from previous project, with help from Stefan -->
+<script>
+var span = document.getElementsByClassName("close") [0];
+var modal;
+
+function openModal (modalID){
+	modal = document.getElementById(modalID);
+	modal.style.display = "block";
+}
+
+function closeModal(){
+	modal.style.display = "none";
+}
+
+span.onclick = function(){
+	modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+
+</html>

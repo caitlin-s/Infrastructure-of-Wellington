@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Telecommunications</title>
+	<link rel="stylesheet" type="text/css" href="css/style4.css">
+</head>
+
+<body>
+
+<!-- HOME BUTTON -->
+<a href="index.html">
+	<button class="buttonHome">
+		<p> Home </p>
+	</button>
+</a>
+
+<!-- TELECOMMUNICATION -->
+	<header> 
+		<section>
+			<h1 style="transform: translateX(-20%)">Telecommunications</h1>
+			<p>Telecommunication is the transmission of information via wire, radio, optical or other electromagnetic systems through the use of technology. Telecommunication networks have played an important role throughout history, and have allowed us to continue developing our technology. They provide us with power, internet, phone lines among other things and have a huge impact on the way we live.</p>
+		</section>
+	</header>
+
+<!-- GRID and MODAL BUTTONS-->
+	<div class="grid">
+		<div id="myBtn" onclick="openModal ('modal1')"> <img src="img/Tele_network/tele_1.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal2')"> <img src="img/Tele_network/tele_2.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal3')"> <img src="img/Tele_network/tele_3.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal4')"> <img src="img/Tele_network/tele_4.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal5')"> <img src="img/Tele_network/tele_5.jpg"> </div>
+		<div id="myBtn" onclick="openModal ('modal6')"> <img src="img/Tele_network/tele_6.jpg"> </div>
+	</div>
+
+<!-- MODAL CONTENT -->
+
+<!-- Telecom -->
+<div id="modal1" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Tele_network/tele_1.jpg"> </div>
+    		<div style="padding-top: 25%">
+    			<h1> TELECOM + SIKA </h1>
+    			<p> Telecommunications hole cover, produced by Sika for Telecom. Telecom, now known as <a href="https://www.spark.co.nz/">Spark</a>, is a telecommunications company providing fixed line telephone services, a mobile network, an internet service provider and a major ICT provider. </p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Citylink -->
+<div id="modal2" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Tele_network/tele_2.jpg"> </div>
+    		<div style="padding-top: 25%">
+    			<h1> CITYLINK + SIKA </h1>
+    			<p>Telecommunications hole cover, produced by Sika for Citylink. <a href="https://www.citylink.co.nz/services"> Citylink</a> is a telecommunications company operating a network of <a href="https://en.wikipedia.org/wiki/Optical_fiber_cable"> fibre optic cabling</a>, used for long distance telecommunication and high speed data connections.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- TelstraSaturn -->
+<div id="modal3" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Tele_network/tele_3.jpg"> </div>
+    		<div>
+    			<h1> TELSTRA SATURN + SIKA </h1>
+    			<p>Telecommunications hole cover, produced by Sika for TelstraSaturn. TelstraSaturn is an Australian telecommunications company, a merge between Telstra and Saturn Communications - they then became <a href="https://en.wikipedia.org/wiki/TelstraClear">TelstraClear</a> after merging with Clear Communications which has now been acquired by <a href="http://customerzone.vodafone.co.nz/">Vodafone</a>. Vodafone is New Zealand's largest mobile phone operator and second largest internet service provider. They also provide internet, telephone and other telecommunications services.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Clear -->
+<div id="modal4" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Tele_network/tele_4.jpg"> </div>
+    		<div style="padding-top: 40%">
+    			<h1> CLEAR </h1>
+    			<p>Telecommunications hole cover, owned by Clear Communications. <a href="https://en.wikipedia.org/wiki/Clear_Communications"> Clear Communications</a> was a telecommunications company and, until its merge with Telstra in 2001, was the biggest rival to Telecom. </p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Chorus -->
+<div id="modal5" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Tele_network/tele_5.jpg"> </div>
+    		<div style="padding-top: 25%">
+    			<h1> CHORUS + SIKA </h1>
+    			<p>Telecommunications hole cover, produced by Sika for Chorus. <a href="https://www.chorus.co.nz/"> Chorus </a> is a provider of telecommunications infrastructure throughout New Zealand and is the owner of the majority of telephone lines and exchange equipment.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Sika -->
+<div id="modal6" class="modal">
+  	<div class="modal-content">
+    	<span class="close" onclick="closeModal()"> &times; </span>
+    	<div class="modalGrid">
+			<div> <img src="img/Tele_network/tele_6.jpg"> </div>
+    		<div style="padding-top: 5%">
+    			<h1> SIKA </h1>
+    			<p><a href="http://www.sikatech.co.nz/cover-sets"> Sika</a> is a manufacturer of cast aluminium products, such as hole covers. They have manufactured almost all of the telecommunications covers I found.</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!-- MODAL SCRIPT -->
+<!-- Code taken from previous project, with help from Stefan -->
+<script>
+var span = document.getElementsByClassName("close") [0];
+var modal;
+
+function openModal (modalID){
+	modal = document.getElementById(modalID);
+	modal.style.display = "block";
+}
+
+function closeModal(){
+	modal.style.display = "none";
+}
+
+span.onclick = function(){
+	modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+
+</html>
